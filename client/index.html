@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main>
+
+      <header>Welcome to Assessment Five</header>
+
+      <div class="container">
+        <h1>Self Esteem boost</h1>
+        <button id="complimentButton">Get a compliment</button>
+      </div>
+      <div class="container">
+        <h1>What does the future hold?</h1>
+        <button id="fortune-btn">Get fortune</button>
+      </div>
+
+      <div class="container">
+        <button id="gif-btn">Random computer gif</button>
+        <section id="gif-section"></section>
+      </div>
+
+
+      <form class="container" id="wishlist-form">
+        <h3>Item name:</h3><input type="text" id="item-name"/>
+        <h3>Priority</h3>
+        <select id="priority-dropdown">
+          <option>Select One</option>
+          <option value="Get Immediately">Get Immediately</option>
+          <option value="Get Soon">Get Soon</option>
+          <option value="Get Eventually">Get Eventually</option>
+        </select>
+        <button>Submit</button>
+      </form>
+
+      <section id="wishlist-section"></section>
+
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../config.js" type='module'></script>
+    <script src="./main.js" type='module'></script>
+  </body>
+</html>
